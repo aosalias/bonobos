@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.9'
 gem 'koala'
+gem 'thin'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -21,7 +22,7 @@ gem 'jquery-rails'
 
 group :development do
   gem 'haml'
-  gem 'thin'
+  gem 'heroku'
 end
 
 # To use ActiveModel has_secure_password
