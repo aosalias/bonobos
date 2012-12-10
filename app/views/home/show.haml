@@ -1,0 +1,41 @@
+.row-fluid.center
+  .span12
+    =image_tag("main-promo.png")
+
+.row-fluid.center
+  .span12
+    =image_tag("sub-promo.png")
+
+.row-fluid.center
+  .span12
+    =image_tag("next-promo.png")
+
+.row-fluid.center
+  .span12
+    %h3 Full On.
+
+#categories
+  - @categories.in_groups_of(3) do |categories|
+    .row-fluid
+      .span8.offset2
+        = render :partial => "category", :collection => categories
+
+#footer_promo
+  - @images.in_groups_of(6) do |row_images|
+    .row-fluid.center
+      .span12
+        - row_images.each do |image|
+          = image_tag(image)
+
+:javascript
+  $(function(){
+    $("#categories .category").hover(
+      function(){
+        $(".category").addClass("opaque");
+        $(this).removeClass("opaque");
+      },
+      function(){
+        $(".category").removeClass("opaque");
+      }
+    );
+  });
