@@ -14,4 +14,5 @@ Limitations:
   - Facebook token not valid (tested with hard coded developer token)
   - Not fully cross browser, cross device tested, though correct tools were chosen
   - Not unit tested
+  - Highlight effect on categories bugged due to left margin
 
