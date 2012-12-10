@@ -11,7 +11,7 @@ What it does:
 Limitations:
   - Categories and SubCategories are stubbed
   - External call to Facebook only rudimentarily memoized, real caching needed
-  - Facebook token not valid (tested with hard coded developer token)
+  - Facebook token not valid (tested with hard coded developer token) (This causes missing images)
   - Not fully cross browser, cross device tested, though correct tools were chosen
   - Not unit tested
   - Highlight effect on categories bugged due to left margin
